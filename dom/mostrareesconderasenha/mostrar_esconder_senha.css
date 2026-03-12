@@ -1,0 +1,15 @@
+body {
+    background-color: yellow;
+
+}
+.meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#senha {
+
+    font-size: 15px;
+    border-radius: 20px;
+}

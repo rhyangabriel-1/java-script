@@ -58,3 +58,19 @@ criarElemento.addEventListener("click", function() {
 lista.appendChild(novoItem);
 novoElemento.value = "";
 });
+
+//Desafio Hard 
+let campo = document.getElementById("campo");
+let resultado = document.getElementById("resultado");
+let enviar = document.getElementById("enviar");
+
+enviar.addEventListener("click", function() {
+if (campo.value.trim() !== "") {
+    resultado.textContent = "Nome enviado com sucesso!";
+    resultado.style.color = "green";
+} else {
+    resultado.textContent = "O campo nome é obrigatório.";
+    resultado.style.color = "red";
+
+}
+});
