@@ -1,0 +1,121 @@
+<!-- Define o tipo do documento como HTML5 -->
+<!DOCTYPE html>
+
+<!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-br">
+
+<head>
+    <!-- Define o conjunto de caracteres (acentos, etc) -->
+    <meta charset="UTF-8">
+
+    <!-- Importa os ícones do Bootstrap (usado no botão de mostrar senha) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Título da página (aparece na aba do navegador) -->
+    <title>Cadastro</title>
+
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Container principal da página -->
+    <div class="container">
+
+        <!-- Título do formulário -->
+        <h2>Cadastro de Usuário</h2>
+
+        <!-- Formulário de cadastro -->
+        <form>
+
+            <!-- ======================
+                 CAMPO NOME
+            ======================= -->
+            <h3>Nome:</h3>
+            <input type="text" id="nome" placeholder="Digite seu Nome"><br><br>
+
+            <!-- Área onde aparece a validação do nome -->
+            <p id="resultadoNome"></p><br>
+
+
+            <!-- ======================
+                 CAMPO EMAIL
+            ======================= -->
+            <h3>Email:</h3>
+            <input type="text" id="email" placeholder="Digite seu Email"><br><br>
+
+            <!-- Mensagem de validação do email -->
+            <p id="resultado"></p><br>
+
+
+            <!-- ======================
+                 CAMPO SENHA
+            ======================= -->
+            <div class="meio">
+
+                <h3>Senha:</h3>
+
+                <!-- Campo de senha (oculto por padrão) -->
+                <input type="password" id="senha" placeholder="Digite sua Senha"><br><br>
+
+                <!-- Ícone de olho (mostrar/ocultar senha via JS) -->
+                <i class="bi bi-eye-fill icone" id="botaoSenha"></i>
+            </div>
+
+            <!-- Mensagem de validação da senha -->
+            <p id="resultadoSenha"></p><br>
+
+
+            <!-- ======================
+                 CAMPO TELEFONE
+            ======================= -->
+            <h3>Telefone:</h3>
+            <input type="text" id="telefone" placeholder="Digite seu Telefone"><br><br>
+
+            <!-- Botão para adicionar mais telefones dinamicamente -->
+            <button type="button" id="addTelefone">Adicionar Telefone</button>
+
+            <!-- Área onde novos telefones serão inseridos via JavaScript -->
+            <div id="telefones"></div><br>
+
+
+            <!-- ======================
+                 CAMPO ENDEREÇO
+            ======================= -->
+            <h3>Endereço:</h3>
+            <input type="text" id="endereco" placeholder="Digite seu Endereço"><br><br>
+
+            <!-- Mensagem de validação do endereço -->
+            <p id="resultadoEndereco"></p><br>
+
+
+            <!-- ======================
+                 BOTÃO DE CADASTRO
+            ======================= -->
+            
+            <!-- Botão que dispara todas as validações via JS -->
+            <button type="button" id="cadastrar">Cadastrar</button>
+
+            <!-- Mensagem final (sucesso ou erro) -->
+            <p id="mensagem"></p>
+
+        </form>
+
+        <!-- Importa o arquivo JavaScript -->
+        <script src="script.js"></script>
+    </div>
+
+
+    <!-- ======================
+         RODAPÉ
+    ======================= -->
+    <footer>
+        <!-- Informações de contato (exemplo fictício) -->
+        <p>techconnect@gmail.com</p>
+        <p>+55 11 99999-9999</p>
+        <p>Rua Exemplo, 123 - São Paulo, SP</p>
+    </footer>
+
+</body>
+</html>
